@@ -14,6 +14,7 @@
     	<link rel="stylesheet" href="css/default-skin.css">
        	<script src="js/jquery-3.4.1"></script>
 		<!--AngularJS para el registro de visitantes, donde pueda registrarse y pueda realizar una búsqueda-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	</head>
 	<body>
 		<header>
@@ -32,6 +33,16 @@
 			<a href="https://hackstore.net/" target="_blank">Hackstore</a>
 			</p><!--Parrafo-->
 		</nav>
+		<section><!--Este section y article va a incluir un título, un párrafo y 2 canciones-->
+			<article>
+				<!--2 canciones-->
+				<p>Implementacion de un framework sencillo basico de la libreria angularjs.</p><!--Parrafo-->
+				<div ng-app="">
+  					<p>Nombre : <input type="text" ng-model="name"></p>
+  					<h1>Hola {{name}}</h1>
+				</div>
+			</article>
+		</section>
 		<section><!--Este section y article va a incluir un título, un párrafo y una imagen-->
 			<article>
 				<h2>Animales preferidos<i class="fas fa-paw"></i></h2><!--Titulo de section-->
@@ -118,6 +129,7 @@
 		</div>
 			</article>
 		</section>
+		
 		<footer>
 			<!--Nombre, matrícula y la fecha cuando se realizo la práctica-->
 			<p>Carlos Daniel Orozco Bravo, 351285, martes 10 de marzo de 2020</p>
