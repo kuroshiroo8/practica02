@@ -10,6 +10,9 @@
 		<!--Font Awesome para destacar con iconos los encabezados-->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<!--Photo Swipe para incluir una galería de imágenes-->
+		<link rel="stylesheet" href="css/photoswipe.css">
+    	<link rel="stylesheet" href="css/default-skin.css">
+       	<script src="js/jquery-3.4.1"></script>
 		<!--AngularJS para el registro de visitantes, donde pueda registrarse y pueda realizar una búsqueda-->
 	</head>
 	<body>
@@ -91,9 +94,73 @@
 				</div>
 			</article>
 		</section>
+		<section><!--Este section y article va a incluir un título, un párrafo y 2 canciones-->
+			<article>
+				<!--2 canciones-->
+				<h2>Videojuegos preferidos<i class="fas fa-futbol"></i></h2><!--Titulo de section-->
+				<p>Tengo muchos videojuegos preferidos.</p><!--Parrafo-->
+				<div class="picture three cf" itemscope itemtype="http://schema.org/ImageGallery">
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					  	<a href="img/PP.jpg" itemprop="contentUrl" data-size="1000x562">
+		                	<img src="img/PP-thumb.jpg" height="170" width="300" itemprop="thumbnail" alt="PP">
+					  	</a>
+					</figure>
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="img/RE.jpg" itemprop="contentUrl" data-size="1200x675">
+		                    <img src="img/RE-thumb.jpg" height="170" width="300" itemprop="thumbnail" alt="RE">
+						</a>
+					</figure>
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+						<a href="img/AC.jpg" itemprop="contentUrl" data-size="1280x720">
+		                    <img src="img/AC-thumb.jpg" height="170" width="300" itemprop="thumbnail" alt="AC">
+						</a>
+					</figure>
+		</div>
+			</article>
+		</section>
 		<footer>
 			<!--Nombre, matrícula y la fecha cuando se realizo la práctica-->
 			<p>Carlos Daniel Orozco Bravo, 351285, martes 10 de marzo de 2020</p>
 		</footer>
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    		<div class="pswp__bg"></div>
+    		<div class="pswp__scroll-wrap">
+ 				<div class="pswp__container">
+            		<div class="pswp__item"></div>
+            		<div class="pswp__item"></div>
+            		<div class="pswp__item"></div>
+        		</div>
+         		<div class="pswp__ui pswp__ui--hidden">
+            		<div class="pswp__top-bar">
+                		<div class="pswp__counter"></div>
+                		<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+		                <button class="pswp__button pswp__button--share" title="Share"></button>
+		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+		                <div class="pswp__preloader">
+		                    <div class="pswp__preloader__icn">
+		                      	<div class="pswp__preloader__cut">
+		                        	<div class="pswp__preloader__donut"></div>
+		                      	</div>
+		                    </div>
+		                </div>
+            		</div>
+	            	<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+	                	<div class="pswp__share-tooltip"></div> 
+	            	</div>
+		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+		            <div class="pswp__caption">
+		            	<div class="pswp__caption__center"></div>
+		            </div>
+        		</div>
+    		</div>
+		</div>
+
+
+<script src="js/photoswipe.min.js"></script>
+<script src="js/photoswipe-ui-default.min.js"></script>
+
+
 	</body>
 </html>
